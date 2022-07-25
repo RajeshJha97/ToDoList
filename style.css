@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans';
+  --background-primary: #f6fbf4;
+  --background-secondary: #d3ebcd;
+  --background-tertiary: #fcf8e8;
+}
+body {
+  background-color: var(--background-secondary);
+}
+.section-center {
+  background-color: var(--background-primary);
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 8rem;
+  box-shadow: 2px 2px;
+  border-radius: 15px;
+}
+.form-container {
+  height: 30vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-heading {
+  font-family: var(--ff-primary);
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.toDo-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.todo-input {
+  margin-top: 5px;
+  width: 30vw;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: var(--background-tertiary);
+  border: none;
+  font-family: var(--ff-secondary);
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  margin-left: 0.5rem;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 20px;
+  background-color: #a5c9ca;
+  border: none;
+  cursor: pointer;
+}
+.hide-clear-btn {
+  border: none;
+  margin-top: 1.2rem;
+  color: red;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 30%;
+  display: none;
+}
+
+.clear-btn {
+  border: none;
+  margin-top: 1.2rem;
+  color: red;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 30%;
+}
+.delete-btn {
+  margin-left: 1rem;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+.edit-btn {
+  border: none;
+  color: rgb(107, 222, 107);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #457376;
+  color: white;
+}
+.form-heading {
+  font-size: 25px;
+}
+.toDo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alert {
+  font-size: 20px;
+  font-family: var(--ff-secondary);
+}
+
+.alert-danger {
+  color: rgb(72, 66, 66);
+  background-color: rgb(246, 205, 205);
+  width: 16rem;
+  text-align: center;
+  border-radius: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.alert-success {
+  color: rgb(50, 104, 50);
+  background-color: rgb(195, 248, 195);
+  width: 16rem;
+  text-align: center;
+  border-radius: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.toDo-item {
+  height: 2rem;
+  display: flex;
+  height: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}

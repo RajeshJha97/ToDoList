@@ -27,8 +27,7 @@ function addItem(e) {
   if (value !== '' && editFlag === false) {
     createListItem(id, value);
     displayAlert('item added to the list', 'success');
-    clearBtn.classList.add('clear-btn');
-    clearBtn.classList.remove('hide-clear-btn');
+    
     addToLocalStorage(id, value);
     setBackToDefault();
   } else if (value !== '' && editFlag === true) {
@@ -150,4 +149,6 @@ function createListItem(id, value) {
   //edit event listener
   editBtn.addEventListener('click', editItem);
   list.appendChild(element);
+  clearBtn.classList.add('clear-btn');
+  clearBtn.classList.remove('hide-clear-btn');
 }
